@@ -50,5 +50,5 @@ jobs:
           file: Dockerfile
           push: true
           tags:
-            ${{ secrets.DOCKER_HUB_USERNAME }}/spring-boot-for-beginners
-            ${{ secrets.DOCKER_HUB_USERNAME }}/spring-boot-for-beginners:${{ env.IMAGE_TAG }}
+            ${{ secrets.DOCKER_HUB_USERNAME }}/spring-boot-for-beginners:latest
+         }
