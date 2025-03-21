@@ -7,7 +7,7 @@
 
   jobs :
     build-deploy:
-      runs-on: ubuntu-least
+      runs-on: ubuntu-latest
       steps:
         - name: Checkout Code
           uses: actions/checkout@v4
