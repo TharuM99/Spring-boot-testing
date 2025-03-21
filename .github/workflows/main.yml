@@ -38,7 +38,7 @@ jobs:
 
       - name: Set Image Tag
         run: |
-          echo "IMAGE_TAG=spring-boot-for-beginners:$(date +'%Y%m%d%H%M%S')" >> $GITHUB_ENV
+          echo "IMAGE_TAG=spring-boot-for-beginners:latest" >> $GITHUB_ENV
 
       - name: Build Docker Image
         uses: docker/build-push-action@v4
