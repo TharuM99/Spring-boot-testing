@@ -38,7 +38,7 @@ jobs:
           context: .
           file: Dockerfile
           push: false
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/spring-boot-for-beginners:$(date +"%Y-%m-%d-%H-%M-%S")
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/spring-boot-for-beginners:latest
 
       - name: Push to Docker Hub
         uses: docker/build-push-action@v4
@@ -46,4 +46,4 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/spring-boot-for-beginners:$(date +"%Y-%m-%d-%H-%M-%S")
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/spring-boot-for-beginners:latest
